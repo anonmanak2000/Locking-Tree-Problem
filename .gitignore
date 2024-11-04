@@ -363,7 +363,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Project Files
-Namma Yatri Challenge.vcxproj.user
-Namma Yatri Challenge.sln
-Namma Yatri Challenge.vcxproj
-Namma Yatri Challenge.vcxproj.filters
+*.user
+*sln
+*.vcxproj
+*.vcxproj.filters
