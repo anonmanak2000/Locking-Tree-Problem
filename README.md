@@ -19,6 +19,7 @@ This project defines three primary operations:
 ### Tree Structure and Problem Context
 
 You have a hierarchical world map represented as an M-ary tree, resembling the structure below:
+![Tree Structure](./Locking Tree Problem.png)
 
 ### Operations
 
