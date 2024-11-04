@@ -19,7 +19,7 @@ This project defines three primary operations:
 ### Tree Structure and Problem Context
 
 You have a hierarchical world map represented as an M-ary tree, resembling the structure below:
-![Tree Structure](./Locking Tree Problem.png)
+![Tree Structure](https://excalidraw.com/#json=52xMcZhT3is7Fq1sVoL3z,B7uRCZS91KZqILeePt_Wmw)
 
 ### Operations
 
