@@ -8,7 +8,7 @@
 class Tree {
 public:
 	std::string value;
-	std::pair<bool, int> locked;
+	std::pair<bool,int> locked;
 	std::vector<Tree*> children;
 	Tree* parent;
 

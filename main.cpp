@@ -11,7 +11,7 @@ int main() {
 		m -> No. of children per node
 		q -> No. of queries/operations to be performed 
 	*/
-	uint32_t n, m, q;
+	unsigned int n, m, q;
 
 	std::cin >> n >> m >> q;
 
@@ -41,9 +41,6 @@ int main() {
 	}
 
 	//Prepare m-ary Tree
-
-	/*uint32_t breaker = n / m;*/
-
 	LockingTree tree;
 
 	tree.initialize_tree(nodes[0]);
@@ -59,6 +56,22 @@ int main() {
 			std::string parent_node = nodes[((i + j - 1) - j) / m],
 				current_node = nodes[(i + j - 1)];
 			tree.add_node(parent_node,current_node);
+		}
+	}
+
+	//Loop queries to print response
+	for (int i = 0; i < q; i++) {
+		switch (queries[i].operation_type) {
+		case 1:
+			std::cout << (tree.lock(queries[i].node_name, queries[i].uid) ? "true" : "false") << std::endl;
+			break;
+		case 2:
+			std::cout << (tree.unlock(queries[i].node_name, queries[i].uid) ? "true" : "false") << std::endl;
+			break;
+		case 3:
+			std::cout << (tree.upgrade_lock(queries[i].node_name, queries[i].uid) ? "true" : "false") << std::endl;
+			break;
+
 		}
 	}
 
